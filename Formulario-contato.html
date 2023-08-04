@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+  
+  <header>
+    <h1 class="nav">Formulário para contato</h1>
+  </header>
+  <nav class="nav">
+    <ul>
+      <a href="index.html" class="button">Página inicial</a>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2 class="nav">Entre em contato conosco, basta fornecer os seguintes dados e escrever a mensagem desejada:</h2>
+    
+    <form action="#" method="post">
+      <section>
+        <h2>Dados Pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </section>
+      
+      <section>
+        <h2>Informações de segurança</h2>
+        <label for="animal">Animal de estimação favorito:</label>
+        <input type="text" id="animal" name="animal" required>
+        
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+      </section>
+      
+      <section>
+        <h2>Mensagem</h2>
+        <label for="mensagem">Digite sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+      </section>
+
+      <section>
+        <h2>Cor favorita</h2>
+        <label for="mensagem">Escolha sua cor favorita:</label>
+        <div class="color-selector">
+          <input type="color">
+        </div>
+      </section>
+      <input type="submit" value="Enviar" class="button">
+    </form>
+  </main>
+  <footer>
+    <p>Site feito por Rafael Feltrim - IFSP(SCL)</p>
+  </footer>
+</body>
+</html>
